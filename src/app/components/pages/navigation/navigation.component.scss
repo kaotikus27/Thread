@@ -1,0 +1,68 @@
+.navigation-container{
+    .logo{
+        cursor: pointer;
+    }
+    background-color: #fff;
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px;
+    align-items: center;
+    max-width: 1440px;
+    box-shadow: 0 2px 4px 0 rgba(88, 88, 88, 0.113);
+    .left-nav{
+        display: flex;
+        flex-direction: row;
+        font-weight: 400;
+        font-size: 14px;
+        .highlight{
+            p{
+                font-weight: 600;
+            }
+        }
+        .item{
+            padding: 9px 15px 9px 15px;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+           p{
+            cursor: pointer;
+           }
+        }
+    }
+    .right-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        .shopping-bag{
+            p{
+                position: absolute;
+                top: 19.5px;
+                right: 300px;
+            }
+        }
+        img{
+            cursor: pointer;
+        }
+        .currency-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            border: 1px solid #F2F2F2;
+            width: 110px;
+            height: 35px;
+            top: 18px; 
+            border-radius: 50px;
+            padding: 5px;
+            cursor: pointer;
+        }
+    }
+
+}

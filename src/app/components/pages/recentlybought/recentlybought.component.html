@@ -1,0 +1,18 @@
+<div class="recently-bought-container">
+    <div class="header">
+        <h1>Recently Bought</h1>
+    </div>
+    <div class="item-sale-context">
+        <div *ngFor="let item of mockData" class="items">
+            <img src="../../../../assets/images/{{item.image}}" alt="" srcset="">
+            <p class="description">{{item.description}}</p>
+            <div class="price">
+                <p class="orig">${{item.price}}</p>  
+        </div>
+            <div class="btn-add-cart">
+                <button (click)="addtocart(item)" type="button">Add to cart</button>
+            </div>
+        </div>
+     </div>
+</div>
+ 

@@ -1,0 +1,108 @@
+<div class="shopping--bag--container">
+    <div class="content">
+        <div class="top--container">
+            <div class="left">
+                <h1>SHOPPINGS BAG ({{totalCartItem}}) </h1>
+                <p> <span>Sign in</span> to sync your bag across your devices.</p>
+            </div>
+            <div class="right">
+                <p>Need help? +1-562-926-5672</p>
+                <p> <img width="25px" height="25px" src="../../../../assets/images/message.png" alt="" srcset=""> <span>Let's Chat</span></p>
+            </div>
+        </div>
+          <div class="bottom--container">
+            <div class="btm-left-container">
+                <div class="context">
+                    <p>ITEM</p>
+                    <p>PRICE</p>
+                </div>
+                <div  *ngFor="let item of boughtData; let i=index" class="items">
+                    <div class="image">
+                        <img src="../../../../assets/images/{{item.image}}" alt="" srcset="">
+                    </div>
+                    <div class="contents">
+                        <div class="alert">
+                            <p> <span>DON'T MISS OUT!</span>  added to bag 23 times in the last 48 hrs</p>
+                        </div>
+                        <div class="bestseller">
+                            <p>BEST SELLER</p>
+                        </div>
+                        <div class="item-name">
+                            <p>{{item.name}}</p>
+                        </div>
+                        <div class="item-description">
+                            <p>{{item.description}}</p>
+                        </div>
+                        <div class="sizecolorqty">
+                            <p>Size: {{item.size}},</p>
+                            <p>Color: {{item.color}},</p>
+                            <p>Qty: {{item.qnty}}</p>
+                        </div>
+                        <div class="item-style">
+                            <p>Style No.</p>
+                            <p class="stylenumber">{{item.stylenumber}}</p>
+                        </div>
+                        <div class="content--btn--actions">
+                            <div class="sfl">
+                                <p>save for later</p>
+                            </div>
+                            <div class="mtf">
+                                <p>move to favorites</p>
+                            </div>
+                            <div class="remove">
+                                <p (click)="remove(item)">remove</p>
+                            </div>
+                            <div class="edit">
+                                <p>edit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <p>{{item.price * item.qnty}} USD</p>
+                    </div>
+                </div>
+            </div>
+            <div class="btm-right-container">
+                <div class="context">
+                    <h1>ORDER SUMMARY</h1>
+                </div>
+                <div class="content--summary">
+                    <div class="top">
+                        <div class="left">
+                            <p>Subtotal ({{totalCartItem}}) </p>
+                            <p>FREE shipping! <span>details</span></p>
+                        </div>
+                        <div class="right">
+                            <p>{{totalPriceItem}} USD</p>
+                            <p>0 USD</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="bottom">
+                        <p>Estimated Total</p>
+                        <p>{{totalPriceItem}} USD</p>
+                    </div>
+                    <div class="VAT">
+                        <p>VAT included!</p>
+                    </div>
+                </div>
+                <div class="checkout btn">
+                    <p>CHECKOUT AS A GUEST</p>
+                </div>
+                <div class="signin btn">
+                    <p>SIGN IN FOR FASTER CHECHOUT</p>
+                </div>
+                <div class="btn--paypal--checkout">
+                    <img src="../../../../assets/images/image 5.png" alt="" srcset="">
+                    <p>Checkout</p>
+                </div>
+            </div>
+          </div>
+          <div class="footer--container">
+            <p>Free Shipping on orders of US$ 100 or more</p>
+            <p>30 day price match guarantee</p>
+          </div>
+    </div>
+
+  <app-footer></app-footer>
+</div>

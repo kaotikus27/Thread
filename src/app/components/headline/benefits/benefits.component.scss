@@ -1,0 +1,22 @@
+.container{
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 25px 0 25px ;
+    background: #F2F2F2;
+    max-width: 1440px;
+    .benefits{
+        padding: 9px 15px 9px 15px;
+        display: flex;
+        flex-direction: row;
+        width: Fixed (228px)px;
+        height: Hug (30px)px;
+        top: 80px;
+        left: 1188px;
+        gap: 15px;
+        opacity: 0px;
+        font-size: 14px;
+    }
+}

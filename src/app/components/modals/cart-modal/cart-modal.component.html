@@ -1,0 +1,28 @@
+<div class="cart--container">
+    <div *ngFor="let item of boughtData; let i=index" class="modal--contents">
+        <div class="left">
+            <img src="../../../../assets/images/{{item.image}}" alt="">
+        </div>
+        <div class="right">
+            <div class="item">
+                <p class="name">{{item.name}}</p>
+                <p class="description">{{item.description}}</p>
+            </div>
+            <div class="details">
+                <p class="size">Size : {{item.size}}</p>
+                <p class="color">Color: {{item.color}}</p>
+                <p class="qty">Qty: {{item.qnty}}</p>
+                <p class="price">{{item.price}} USD</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="bag--count">
+        <p class="count">My Bag ({{totalCartItem}})</p>
+        <p>{{totalPriceItem}} USD</p>
+    </div>
+    <div class="checkout-btn">
+        <button routerLink="/shoppingbag"  >BEGIN CHECKOUT</button>
+    </div>
+</div>

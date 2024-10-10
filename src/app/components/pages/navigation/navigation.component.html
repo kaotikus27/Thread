@@ -1,0 +1,46 @@
+<div class="navigation-container">
+    <div class="left-nav">
+        <div class="item highlight">
+            <p >WOMEN</p>
+        </div>
+        <div class="item">
+            <p>PLUS</p>
+        </div>
+        <div class="item">
+            <p>MEN</p>
+        </div>
+        <div class="item">
+            <p>ACCESORIES</p>
+        </div>
+    </div>
+    <div routerLink="/" class="logo">
+        <img src="../../../../assets/images/Logo.svg" alt="">
+    </div>
+    <div class="right-nav">
+        <div class="user">
+            <img src="../../../../assets/icons/bx_bx-user.svg" alt="">
+        </div>
+        <div class="shopping-bag" (click)="toggleCart()">
+           <img src="../../../../assets/icons/bx_bx-shopping-bag.svg" alt="">
+           <app-cart-modal *ngIf="showCart" ></app-cart-modal>
+           <p>{{totaCartItem}}</p>
+        </div>
+        <div class="heart">
+            <img src="../../../../assets/icons/bx_bx-heart.svg" alt="">
+        </div>
+        <div class="support">
+            <img src="../../../../assets/icons/bx_bx-support.svg" alt="">
+        </div>
+        <div class="search">
+            <img src="../../../../assets/icons/bx_bx-search.svg" alt="">
+        </div>
+
+        <div class="currency-container">
+            <!-- make this dynamic if have time -->
+             <img src="../../../../assets/icons/US Flag.svg" alt="">
+             <p>USD $</p>
+             <img  src="../../../../assets/icons/down-arrow.svg" alt="">
+        </div>
+
+    </div>
+</div>

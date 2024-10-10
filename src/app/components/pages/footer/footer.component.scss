@@ -1,0 +1,50 @@
+.footer-container{
+    max-width: 1440px;
+    padding: 20px 15px 20px 15px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.63px;
+    p{
+        cursor: pointer;
+    }
+    .highlight{
+        font-weight: 600;
+        font-size: 12px;
+    }
+    .top--container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: 1fr; 
+        gap: 10px; 
+        .left--container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: 1fr; 
+        .cursor{
+            cursor: pointer;
+        }
+        }
+        .right--container{
+            img{
+                margin-right: 10px;
+                cursor: pointer;
+            }
+            .payments{
+                img{
+                    width: 37.5px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+    .bottom--container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 25px 0 25px 0;
+        
+    }
+}
