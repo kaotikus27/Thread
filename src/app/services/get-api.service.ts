@@ -13,6 +13,12 @@ export class GetAPIService {
 
   APIURL = "http://localhost:3000/MockData"
   APIURLBOUGHT = "http://localhost:3000/BoughtData"
+
+
+ /*  APIURL = "https://kaotikus27.github.io/recentlybought/MockData.js"
+  APIURLBOUGHT = "https://kaotikus27.github.io/recentlybought/MockDatas.js" */
+  
+
   
   
   public cartItemList: any =[];
