@@ -16,6 +16,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CartModalComponent } from './components/modals/cart-modal/cart-modal.component';
 import { CurrencyComponent } from './components/currency/currency.component';
+import { SalesComponent } from './components/pages/sales/sales.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { CurrencyComponent } from './components/currency/currency.component';
     ShoppingbagComponent,
     TrendingComponent,
     CartModalComponent,
-    CurrencyComponent
+    CurrencyComponent,
+    SalesComponent
   ],
   imports: [
     BrowserModule,
