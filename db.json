@@ -73,18 +73,6 @@
       "price": "38",
       "image": "Rectangle 1r.png",
       "qnty": 1
-    },
-    {
-      "id": "f6fc",
-      "itemId": 2,
-      "name": "Bag Flap",
-      "description": "Chevron Flap Crossbody Bag",
-      "size": "M",
-      "color": "Multicolor",
-      "stylenumber": "BROR-XD121",
-      "price": "5.77",
-      "image": "Rectangle 2r.png",
-      "qnty": 1
     }
   ]
 }
